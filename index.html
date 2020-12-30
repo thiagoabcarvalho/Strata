@@ -11,6 +11,12 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!--normalize para resetar todas as formatações padrões do html-->
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/estilo.css">
 </head>
 
@@ -19,10 +25,11 @@
         <a href="index.html" class="main-header-link">
             <img src="./img/avatar.jpg" alt="foto do Thiago Carvalho">
         </a>
-        <h1>Protifólio <br>
+        <h1 class="main-header-title">Protifólio <br>
             <Strong>Thiago Augusto Bueno de Carvalho</Strong>, <br>
             um texto qualquer para<br>
             para encher linguiça.
+            <a href="https://www.google.com" class="main-header-link">Behance</a>
         </h1>
     </header>
     <main class="main-content">
@@ -136,14 +143,22 @@
             <p>Lorem ipsum dolor <b>bold</b> sit amet consectetur <strong>strong</strong> adipisicing elit. Eaque
                 <i>italic</i> quae voluptates libero, iusto voluptatum <em>emphasized</em> minus mollitia
                 <sup>superscript</sup> iste <sub>subscript</sub> dolore alias, a voluptatem <u>underlined</u> quam quasi
-                <code>code: for (;;) { ... }</code>. reiciendis excepturi distinctio. Temporibus! <a href="#">a link</a>
+                <code>code: for (;;) { ... }</code>. reiciendis excepturi distinctio. Temporibus!
+                <a href="https://www.google.com.br">a link</a>
             </p>
+
+            <h1>Titulo h1</h1>
+            <h2>Titulo h2</h2>
+            <h3>Titulo h3</h3>
+            <h4>Titulo h4</h4>
+            <h5>Titulo h5</h5>
+            <h6>Titulo h6</h6>
 
             <!--para fazer uma citação um pouco mais longa.-->
             <blockquote cite="http://developer.mozilla.org">
-                <p>Esta é uma citação tirada da
-                    Mozilla Developer Center.
-                </p>
+                Isto é uma Citação - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptas facere
+                possimus quae at iusto natus. A, cum reprehenderit aperiam sequi suscipit molestiae quidem
+                reiciendis architecto itaque ad quos dolorem?
             </blockquote>
 
             <!--A tag Q é usada para um sitação curta-->
@@ -153,51 +168,60 @@
                 </q>
             </p>
 
-            <h4>Proformatiado</h4>
+            <h4>Preformatiado</h4>
 
-            <!--a tag PRE é usada para mostrar a formatação do código no browser. Não pode ser usada em diagramação de texto
+            <!--a tag PRE é usada para mostrar a exatamente a formatação do código no browser. Não pode ser usada em diagramação de texto
             apenas em lugares especificos-->
             <pre>
                 <code>
-                &lt;script&gt;
-                alert
-                &lt;/script&gt;
+    &lt;script&gt;
+    alert
+    &lt;/script&gt;
                 </code>
             </pre>
 
             <h4>Listas</h4>
 
-            <h5>Não ordenada</h5>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+            <div class="row">
+                <div class="col-2">
+                    <h5>Não ordenada</h5>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
 
-            <h5>Ordenada</h5>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
+                    <h5>Ordenada</h5>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
 
-            <h5>Alternate</h5>
-            <ul class="ul-alternete">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
 
-            <h5>Icons</h5>
-            <ul>
-                <li>
-                    <i class="fab fa-twitter"></i>
-                </li>
-                <li><i class="fab fa-facebook"></i>
-                </li>
-                <li><i class="fab fa-instagram"></i>
-                </li>
-            </ul>
+
+                <div class="col-2">
+                    <h5>Alternate</h5>
+                    <ul class="ul-alternete">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+
+                    <h5>Icons</h5>
+                    <ul class="ul-icons">
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li><i class="fab fa-facebook"></i>
+                        </li>
+                        <li><i class="fab fa-instagram"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
 
             <h5>Actions</h5>
             <p>
@@ -396,7 +420,6 @@
             </p>
 
         </section>
-
 
     </main>
     <footer class="main-footer"></footer>

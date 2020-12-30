@@ -1,1 +1,161 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+body{
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    color: #666;
+    line-height: 1.7;
+}
+
+a {
+    transition: color .2s linear, border .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #49bf9d;
+}
+
+a:hover{
+    border-bottom-color: transparent;
+}
+
+p{
+    margin: 0 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    /*1em no caso é o espaçamento relativo ao tamanho do fonte size*/
+    margin: 1em 0;
+}
+
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 15px;
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #efefef;
+    margin: 2em 0;
+    padding: .5em 0 .5em 1.5em;
+}
+
+code{
+    background: #f7f7f7;
+    border-radius: .35em;
+    border: 2px solid #efefef;
+    font-size: .9em;
+    padding: 0.25em 0.65em;
+    /*sempre quando colocar font com espaço entre as palavras utilizar "..."*/
+    font-family: "courier new", monospace;
+    color: #929292;   
+}
+/*para circular apenas as informações do code sem quebra de linha*/
+pre code{
+    display: block;
+}
+
+ul,ol{
+    margin:0;
+    padding: 0;
+    padding-left: 1.1em;
+}
+
+li{
+    /*para manter a mesma distancia dos */
+    padding-left: .5em;
+}
+
+.ul-alternete{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ul-alternete li{
+    border-bottom: 2px solid #dfdfdf;
+    padding-left: 0;
+}
+
+/*LAST-CHILD pegar o ultimo elemento da li*/
+.ul-alternete li:last-child{
+    border: 0;
+}
+
+.ul-icons{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ul-icons li{
+    display: inline-block;
+    font-size: 2em;
+    color: #49bf9d;
+}
+
+
+.main-header{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+    background-image: url(../img/overlay.png), url(../img/bg.jpg );
+    background-position: left top;
+    background-size:auto, cover;
+    text-align: right;
+}
+
+.main-header-title{
+    font-size: 25px; 
+    line-height: 1.5;
+    font-weight: normal;
+    color: rgba(255,255,255, .5)    
+}
+
+.main-header-title strong{
+    color: white;
+    font-weight: normal;
+}
+
+.main-header-link{
+    /*herda a cor do elemento pai no caso main-header*/
+    color: inherit;    
+}
+
+.main-header-link:hover{
+    color:#49bf9d;
+}
+
+.main-content{
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+}
+
+.row{
+    overflow: auto;
+
+}
+
+.col-2{
+    width: 50%;
+    float: left;
+}
