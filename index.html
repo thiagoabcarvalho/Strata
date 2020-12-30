@@ -8,13 +8,16 @@
     <meta name="author" content="thiago Carvalho">
     <meta name="description" content="Strata">
     <meta name="keyworkds" content="html5, css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilo.css">
 </head>
 
 <body>
     <header class="main-header">
         <a href="index.html" class="main-header-link">
-            <img src="#" alt="foto do Thiago Carvalho">
+            <img src="./img/avatar.jpg" alt="foto do Thiago Carvalho">
         </a>
         <h1>Protifólio <br>
             <Strong>Thiago Augusto Bueno de Carvalho</Strong>, <br>
@@ -30,7 +33,8 @@
                 in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque
                 commodo
                 blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-                vulputate lorem neque cubilia.</p>
+                vulputate lorem neque cubilia.
+            </p>
 
             <a href="#" tittel="veja mais" class="button-default">Veja mais</a>
         </section>
@@ -88,6 +92,310 @@
             <a href="#" tittel="Veja Portifólio Completo" class="button-default">Veja Portifólio Completo</a>
         </section>
 
+        <section class="main-content-section">
+            <h3>Get in touch</h3>
+            <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu
+                lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
+            </p>
+
+            <form action="#" method="POST">
+                <label for="nome">nome</label>
+                <input type="text" name="name" id="nome">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="mensagem">Digite sua mensagem</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+            <Address>
+                <p>
+                    <span>Endereço</span>
+                    1234 Somewhere Rd. Nashville, TN 00000 United States
+                </p>
+
+                <p>
+                    <span>Telefone</span>
+                    000-000-000
+                </p>
+
+                <p>
+                    <span>Email</span>
+                    email@server.com
+                </p>
+            </Address>
+
+        </section>
+
+        <section class="main-content-section">
+            <h3>Elements</h3>
+            <h4>Text</h4>
+            <p>Lorem ipsum dolor <b>bold</b> sit amet consectetur <strong>strong</strong> adipisicing elit. Eaque
+                <i>italic</i> quae voluptates libero, iusto voluptatum <em>emphasized</em> minus mollitia
+                <sup>superscript</sup> iste <sub>subscript</sub> dolore alias, a voluptatem <u>underlined</u> quam quasi
+                <code>code: for (;;) { ... }</code>. reiciendis excepturi distinctio. Temporibus! <a href="#">a link</a>
+            </p>
+
+            <!--para fazer uma citação um pouco mais longa.-->
+            <blockquote cite="http://developer.mozilla.org">
+                <p>Esta é uma citação tirada da
+                    Mozilla Developer Center.
+                </p>
+            </blockquote>
+
+            <!--A tag Q é usada para um sitação curta-->
+            <p>According to Mozilla's website,
+                <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
+                    was released in 2004 and became a big success.
+                </q>
+            </p>
+
+            <h4>Proformatiado</h4>
+
+            <!--a tag PRE é usada para mostrar a formatação do código no browser. Não pode ser usada em diagramação de texto
+            apenas em lugares especificos-->
+            <pre>
+                <code>
+                &lt;script&gt;
+                alert
+                &lt;/script&gt;
+                </code>
+            </pre>
+
+            <h4>Listas</h4>
+
+            <h5>Não ordenada</h5>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <h5>Ordenada</h5>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+
+            <h5>Alternate</h5>
+            <ul class="ul-alternete">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <h5>Icons</h5>
+            <ul>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li><i class="fab fa-facebook"></i>
+                </li>
+                <li><i class="fab fa-instagram"></i>
+                </li>
+            </ul>
+
+            <h5>Actions</h5>
+            <p>
+                <a href="#" class="button-default">Default</a>
+                <!--botão apenas com contorno-->
+                <a href="#" class="button-default button-default-stroke">Default</a>
+            </p>
+
+            <p>
+                <a href="#" class="button-default button-default-small">Default</a>
+                <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+            </p>
+
+            <p>
+                <a href="#" class="button-default button-default-full">Default</a>
+                <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+            </p>
+
+            <p>
+                <a href="#" class="button-default button-default-full buton-small">Default</a>
+                <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+            </p>
+
+            <h4>Table</h4>
+            <h5>Defaul</h5>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <td colspan="2"></td>
+                    <td>100.00</td>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Two</td>
+                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Three</td>
+                        <td>Morbi faucibus arcu accumsan lorem.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>Vitae integer tempus condimentum.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Five</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Alternate</h5>
+            <table class="table-alternate">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <td colspan="2"></td>
+                    <td>100.00</td>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Two</td>
+                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Three</td>
+                        <td>Morbi faucibus arcu accumsan lorem.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>Vitae integer tempus condimentum.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Five</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Buttons</h5>
+            <!--no caso de usar o BUTTON posso usar qualquer coisa dentro do botão, já no INPUT TYPE "SUBMIT"-->
+            <p>
+                <button class="button-default">Default</button>
+                <button class="button-default button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button class="button-default button-default-small">Default</button>
+                <button class="button-default button-default-small button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button class="button-default button-default-full">Default</button>
+                <button class="button-default button-default-full button-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button class="button-default button-default-full buton-small">Default</button>
+                <button class="button-default button-default-full button-default-stroke">Default</button>
+            </p>
+
+            <input type="submit" class="button-default" value="mandar">
+
+            <h5>Forms</h5>
+
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Email</label>
+                <input type="text" email="email" id="email">
+
+                <select>
+                    <option value="0">Selecione ...</option>
+                    <option value="1">HTML</option>
+                    <option value="2">SCSS.</option>
+                    <option value="3">JavaScript</option>
+                </select>
+
+                <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
+                <label><input type="radio" value="media" name="prioridade">Média prioridade</label>
+                <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
+
+                <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+                <label><input type="checkbox" name="copy" value="1">Sou humano</label>
+
+                <label for="msg">Mensagem</label>
+                <textarea placeholder="digite uma mensagem" id="msg"></textarea>
+
+                <input type="submit" class="button-default" value="Enviar">
+                <input type="reset" class="button-default-stroke" value="Limpar">
+            </form>
+
+
+
+        </section>
+
+        <section class="main-content-section">
+            <h3>Imagens</h3>
+            <div class="gallery-img">
+                <img src="./img/fulls/01.jpg" alt="descritivo">
+            </div>
+            <div class="galleru-thumb">
+                <img src="./img/thumbs/01.jpg" alt="descritivo">
+                <img src="./img/thumbs/02.jpg" alt="descritivo">
+                <img src="./img/thumbs/03.jpg" alt="descritivo">
+                <img src="./img/thumbs/04.jpg" alt="descritivo">
+                <img src="./img/thumbs/05.jpg" alt="descritivo">
+                <img src="./img/thumbs/06.jpg" alt="descritivo">
+            </div>
+
+            <h4>left &amp; right</h4>
+            <p><img src="./img/avatar.jpg" alt="minha foto" class="img-left">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non doloremque, cumque expedita sequi dolor
+                atque beatae itaque minima perspiciatis! Quibusdam mollitia cum deserunt saepe assumenda exercitationem
+                repellendus, reprehenderit velit ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                natus id laborum sint mollitia unde rerum, eveniet repellendus a sit nemo obcaecati cupiditate
+                perferendis libero nobis nam iure voluptas iste?
+            </p>
+            <p><img src="./img/avatar.jpg" alt="minha foto" class="img-right">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non doloremque, cumque expedita sequi dolor
+                atque beatae itaque minima perspiciatis! Quibusdam mollitia cum deserunt saepe assumenda exercitationem
+                repellendus, reprehenderit velit ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                natus id laborum sint mollitia unde rerum, eveniet repellendus a sit nemo obcaecati cupiditate
+                perferendis libero nobis nam iure voluptas iste?
+            </p>
+
+        </section>
 
 
     </main>
