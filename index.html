@@ -22,7 +22,7 @@
 
 <body>
     <header class="main-header">
-        <a href="index.html" class="main-header-link">
+        <a href="index.html" class="main-header-link imagem-link">
             <img src="./img/avatar.jpg" alt="foto do Thiago Carvalho">
         </a>
         <h1 class="main-header-title">Protifólio <br>
@@ -48,53 +48,63 @@
 
         <section class="main-content-section">
             <h3>Recent Work</h3>
-            <article class="recent-works-card">
-                <a href="./img/fulls/01.jpg">
-                    <img src="./img/thumbs/01.jpg" alt="imagem de uma rua com carros estácionados">
-                </a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+            <div class="row">
+                <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="./img/fulls/01.jpg">
+                            <img src="./img/thumbs/01.jpg" alt="imagem de uma rua com carros estácionados">
+                        </a>
+                        <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
 
-            <article class="recent-works-card">
-                <a href="./img/fulls/02.jpg">
-                    <img src="./img/thumbs/02.jpg" alt="imagem de uma floresta">
-                </a>
-                <p class="recent-works-card-title">Ultricies lacinia interdum</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="./img/fulls/02.jpg">
+                            <img src="./img/thumbs/02.jpg" alt="imagem de uma floresta">
+                        </a>
+                        <p class="recent-works-card-title">Ultricies lacinia interdum</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
 
-            <article class="recent-works-card">
-                <a href="./img/fulls/03.jpg">
-                    <img src="./img/thumbs/03.jpg" alt="imagem de uma biblioteca">
-                </a>
-                <p class="recent-works-card-title">Tortor metus commdo</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="./img/fulls/03.jpg">
+                            <img src="./img/thumbs/03.jpg" alt="imagem de uma biblioteca">
+                        </a>
+                        <p class="recent-works-card-title">Tortor metus commdo</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                </div>
 
-            <article class="recent-works-card">
-                <a href="./img/fulls/04.jpg">
-                    <img src="./img/thumbs/04.jpg" alt="imagem de uma escada e pés subindo">
-                </a>
-                <p class="recent-works-card-title">Qua neque phasellus</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+                <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="./img/fulls/04.jpg">
+                            <img src="./img/thumbs/04.jpg" alt="imagem de uma escada e pés subindo">
+                        </a>
+                        <p class="recent-works-card-title">Qua neque phasellus</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
 
-            <article class="recent-works-card">
-                <a href="./img/fulls/05.jpg">
-                    <img src="./img/thumbs/05.jpg" alt="imagem de montanhas com os picos congelados com um céu azul">
-                </a>
-                <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="./img/fulls/05.jpg">
+                            <img src="./img/thumbs/05.jpg"
+                                alt="imagem de montanhas com os picos congelados com um céu azul">
+                        </a>
+                        <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
 
-            <article class="recent-works-card">
-                <a href="./img/fulls/06.jpg">
-                    <img src="./img/thumbs/06.jpg" alt="imagem de uma cabana na floresta em meio a um desfiladeiro">
-                </a>
-                <p class="recent-works-card-title">Risus ornare lacinia</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="./img/fulls/06.jpg">
+                            <img src="./img/thumbs/06.jpg"
+                                alt="imagem de uma cabana na floresta em meio a um desfiladeiro">
+                        </a>
+                        <p class="recent-works-card-title">Risus ornare lacinia</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                </div>
+            </div>
+            <!--fechamento da row-->
+
 
             <a href="#" tittel="Veja Portifólio Completo" class="button-default">Veja Portifólio Completo</a>
         </section>
@@ -393,7 +403,7 @@
                     <option value="2">SCSS.</option>
                     <option value="3">JavaScript</option>
                 </select>
-
+                <!--radios são as bolinhas e o quadrado é o checkbox-->
                 <label><input type="radio" value="baixa" name="prioridade">Baixa prioridade</label>
                 <label><input type="radio" value="media" name="prioridade">Média prioridade</label>
                 <label><input type="radio" value="alta" name="prioridade">Alta prioridade</label>
@@ -404,8 +414,9 @@
                 <label for="msg">Mensagem</label>
                 <textarea placeholder="digite uma mensagem" id="msg"></textarea>
 
-                <input type="submit" class="button-default" value="Enviar">
-                <input type="reset" class="button-default-stroke" value="Limpar">
+                <input type="submit" class="button-default button-default-big" value="Enviar">
+                <input type="reset" class="button-default button-default-stroke button-default button-default-big"
+                    value="Limpar">
             </form>
 
 
@@ -417,13 +428,16 @@
             <div class="gallery-img">
                 <img src="./img/fulls/01.jpg" alt="descritivo">
             </div>
-            <div class="galleru-thumb">
-                <img src="./img/thumbs/01.jpg" alt="descritivo">
-                <img src="./img/thumbs/02.jpg" alt="descritivo">
-                <img src="./img/thumbs/03.jpg" alt="descritivo">
-                <img src="./img/thumbs/04.jpg" alt="descritivo">
-                <img src="./img/thumbs/05.jpg" alt="descritivo">
-                <img src="./img/thumbs/06.jpg" alt="descritivo">
+            <div class="gallery-thumb row">
+                <img class="col-1-3" src="./img/thumbs/01.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/02.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/03.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/04.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/05.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/06.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/03.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/02.jpg" alt="descritivo">
+                <img class="col-1-3" src="./img/thumbs/01.jpg" alt="descritivo">
             </div>
 
             <h4>left &amp; right</h4>
