@@ -29,8 +29,8 @@
             <Strong>Thiago Augusto Bueno de Carvalho</Strong>, <br>
             um texto qualquer para<br>
             para encher linguiça.
-            <a href="https://www.google.com" class="main-header-link">Behance</a>
         </h1>
+        <p>Retirado de <a href="https://www.google.com" class="main-header-link">Behance</a></p>
     </header>
     <main class="main-content">
         <section class="main-content-section">
@@ -43,7 +43,7 @@
                 vulputate lorem neque cubilia.
             </p>
 
-            <a href="#" tittel="veja mais" class="button-default">Veja mais</a>
+            <a href="#" tittel="veja mais" class="button-default button-default-stroke">Veja mais</a>
         </section>
 
         <section class="main-content-section">
@@ -140,17 +140,17 @@
                 <div class="col-1-3">
                     <Address>
                         <p>
-                            <span>Endereço</span>
+                            <span>Endereço:</span>
                             1234 Somewhere Rd. Nashville, TN 00000 United States
                         </p>
 
                         <p>
-                            <span>Telefone</span>
+                            <span>Telefone:</span>
                             000-000-000
                         </p>
 
                         <p>
-                            <span>Email</span>
+                            <span>Email:</span>
                             email@server.com
                         </p>
                     </Address>
@@ -183,9 +183,10 @@
 
             <!--para fazer uma citação um pouco mais longa.-->
             <blockquote cite="http://developer.mozilla.org">
-                Isto é uma Citação - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptas facere
-                possimus quae at iusto natus. A, cum reprehenderit aperiam sequi suscipit molestiae quidem
-                reiciendis architecto itaque ad quos dolorem?
+                <p>Isto é uma Citação - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptas facere
+                    possimus quae at iusto natus. A, cum reprehenderit aperiam sequi suscipit molestiae quidem
+                    reiciendis architecto itaque ad quos dolorem?
+                </p>
             </blockquote>
 
             <!--A tag Q é usada para um sitação curta-->
@@ -196,16 +197,12 @@
             </p>
 
             <h4>Preformatiado</h4>
-
-            <!--a tag PRE é usada para mostrar a exatamente a formatação do código no browser. Não pode ser usada em diagramação de texto
-            apenas em lugares especificos-->
-            <pre>
-                <code>
+            <!--a tag PRE é usada para mostrar a exatamente a formatação do código no browser. Não pode ser usada em diagramação de texto apenas em lugares especificos-->
+            <pre><code>
     &lt;script&gt;
     alert
     &lt;/script&gt;
-                </code>
-            </pre>
+            </code></pre>
 
             <h4>Listas</h4>
 
@@ -236,12 +233,11 @@
 
                     <h5>Icons</h5>
                     <ul class="ul-icons">
-                        <li>
-                            <i class="fab fa-twitter"></i>
+                        <li><span class="hidden">Twitter</span><i class="fab fa-twitter"></i>
                         </li>
-                        <li><i class="fab fa-facebook"></i>
+                        <li><span class="hidden">Facebook</span><i class="fab fa-facebook"></i>
                         </li>
-                        <li><i class="fab fa-instagram"></i>
+                        <li><span class="hidden">Intagram</span><i class="fab fa-instagram"></i>
                         </li>
                     </ul>
                 </div>
@@ -390,7 +386,7 @@
 
             <h5>Forms</h5>
 
-            <form>
+            <form action="#" method="post">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name">
 
@@ -459,7 +455,17 @@
         </section>
 
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+        <ul class="ul-icon">
+            <li><a href="#" class="icon-link"><span class="hidden">Twitter</span><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icon-link"><span class="hidden">Facebook</span><i
+                        class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#" class="icon-link"><span class="hidden">GitHub</span><i class="fab fa-github"></i></a></li>
+        </ul>
+        <ul class="fa fa-copyright"></ul>
+        <li>© unititled</li>
+        <li>Design: <a href="www.google.com">HTML5 UP</a></li>
+    </footer>
 
 </body>
 
