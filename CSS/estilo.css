@@ -19,16 +19,14 @@ p{
     margin: 0 0 2em;
 }
 
-img{
-    /*para as imagens se adaptar(responsivo), como o MAX ele vai aumentar até a largura máxima da imagem*/
-    max-width:100%;
+img{    
+    max-width:100%;/*para as imagens se adaptar(responsivo), como o MAX ele vai aumentar até a largura máxima da imagem*/
 }
 
 h1, h2, h3, h4, h5, h6{
     color: #787878;
-    font-weight: normal;
-    /*1em no caso é o espaçamento relativo ao tamanho do fonte size*/
-    margin: 1em 0;
+    font-weight: normal;    
+    margin: 1em 0;/*1em no caso é o espaçamento relativo ao tamanho do fonte size*/
 }
 
 h1{
@@ -69,9 +67,8 @@ code{
     border-radius: .35em;
     border: 2px solid #efefef;
     font-size: .9em;
-    padding: 0.25em 0.65em;
-    /*sempre quando colocar font com espaço entre as palavras utilizar "..."*/
-    font-family: "courier new", monospace;
+    padding: 0.25em 0.65em;    
+    font-family: "courier new", monospace;/*sempre quando colocar font com espaço entre as palavras utilizar "..."*/
     color: #929292;   
 }
 /*para circular apenas as informações do code sem quebra de linha*/
@@ -85,9 +82,8 @@ ul,ol{
     padding-left: 1.1em;
 }
 
-li{
-    /*para manter a mesma distancia dos */
-    padding-left: .5em;
+li{    
+    padding-left: .5em;/*para manter a mesma distancia dos */
 }
 
 .hidden{ /*isso garante que o texto ainda seja lido pelo leitor de tela mas invisivel no browser*/
@@ -139,20 +135,17 @@ input, textarea, select{
 }
 
 input:focus, textarea:focus{
-    border: 3px solid #49bf9d;
-    /*para tirar a linha de formatação padrão do browser*/
-    outline: none;
+    border: 3px solid #49bf9d;    
+    outline: none;/*para tirar a linha de formatação padrão do browser*/
 }
 
 textarea{
     height: 10em;
 }
 
-/*quando quiser selecionar algum atributo especifico é usado o colchetes*/
-input[type="radio"], input[type="checkbox"]{
+input[type="radio"], input[type="checkbox"]{/*quando quiser selecionar algum atributo especifico é usado o colchetes*/
     width: auto;
 }
-
 
 .button-default{
     background-color: #49bf9d;
@@ -285,7 +278,6 @@ input[type="radio"], input[type="checkbox"]{
 .main-header-link img{
     border-radius: 50%;
     overflow: hidden;
-
 }
 
 .recent-works-card{
@@ -310,8 +302,18 @@ input[type="radio"], input[type="checkbox"]{
     left: 0;
     padding: 0 54px 72px 0;
     box-sizing: border-box;
-    text-align: right;
+    text-align: right;    
 }
+
+.main-footer .ul-icons a{
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+.main-footer a:hover{
+    color:#474747;
+}
+
 
 /*Grid*/
 .row{
@@ -356,3 +358,24 @@ input[type="radio"], input[type="checkbox"]{
 .col-2-3 + .col-1-3, .col-1-3 + .col-2-3{     
     margin-left: 2%;
 }
+
+
+.ul-icon{
+    list-style: none;
+    padding-right: 0;      
+    
+}
+
+.ul-icon li{
+    display: inline-block;
+    font-size: 2em;    
+}
+
+.fa-copyright{
+    list-style:none;
+}
+
+
+
+    
+
