@@ -104,7 +104,7 @@ li{
     padding-left: 0;
 }
 
-/*LAST-CHILD pegar o ultimo elemento da li*/
+/*LAST-CHILD pegar o ultimo elemento filho da li*/
 .ul-alternete li:last-child{
     border: 0;
 }
